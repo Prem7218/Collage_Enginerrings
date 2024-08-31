@@ -1,0 +1,204 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background: #212529;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #adb5bd;
+}
+
+.hero {
+    background: url('https://media.istockphoto.com/id/1494104649/photo/ai-chatbot-artificial-intelligence-digital-concept.jpg?s=612x612&w=0&k=20&c=1Zq2sj3W0tWcpc-n1fVt4dQQOBGhtwcAk1H2eQ5MAbI=') no-repeat center center/cover;
+    color: #fff;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero .container {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero h2 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #0056b3;
+}
+
+.ai-intro {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.ai-intro h2 {
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+.ai-intro p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #495057;
+}
+
+.ai-applications {
+    background: #e9ecef;
+    padding: 60px 0;
+}
+
+.ai-applications h2 {
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #007BFF;
+}
+
+.ai-application-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.ai-application-item {
+    background: #fff;
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ai-application-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ai-application-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ai-application-item h3 {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.6em;
+    background: #007BFF;
+    color: #fff;
+}
+
+.ai-application-item p {
+    padding: 15px;
+    font-size: 1em;
+    text-align: center;
+    color: #495057;
+}
+
+.ai-future {
+    background: #fff;
+    padding: 60px 0;
+}
+
+.ai-future h2 {
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007BFF;
+}
+
+.ai-future p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #495057;
+}
+
+footer {
+    background: #212529;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}

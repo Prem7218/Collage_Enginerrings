@@ -1,0 +1,172 @@
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header {
+    background: #212529;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #adb5bd;
+}
+
+
+.hero {
+    background: #343a40;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.hero .btn:hover {
+    background-color: #218838;
+}
+
+.introduction {
+    background: #fff;
+    padding: 40px 0;
+}
+
+.introduction h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.applications {
+    background: #eaeaea;
+    padding: 40px 0;
+}
+
+.applications h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.application-item {
+    background: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.application-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.application-item p {
+    font-size: 1em;
+}
+
+.future {
+    background: #fff;
+    padding: 40px 0;
+}
+
+.future h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.future p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+}

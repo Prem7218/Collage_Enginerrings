@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webinar Page</title>
+    <link rel="stylesheet" href="webinar.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="webinar-overview">
+        <h1>Upcoming Webinars</h1>
+        <p>
+          Join our upcoming webinars to learn about the latest trends and
+          technologies in AI, Data Science, and Web Development.
+        </p>
+      </section>
+
+      <center>
+        <div class="button-group">
+            <button class="btn"><a href="/home">HOME</a></button>
+            <button class="btn"><a href="/about">ABOUT</a></button>
+        </div>
+    </center>    
+
+      <div class="webinar-list">
+        <div class="webinar-item" onclick="showDetails(1)">
+          <img
+            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYmluYXIlMjBBSSUyMGFuZCUyMERhdGElMjBTY2llbmNlfGVufDB8fDB8fHww"
+            alt="Webinar 1"
+          />
+          <h3>AI and Data Science</h3>
+          <p>
+            Explore the world of Artificial Intelligence and Data Science in
+            this comprehensive webinar.
+          </p>
+        </div>
+        <div class="webinar-item" onclick="showDetails(2)">
+          <img
+            src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2ViaW5hciUyMFdlYiUyMERldmVsb3BtZW50fGVufDB8fDB8fHww"
+            alt="Webinar 2"
+          />
+          <h3>Web Development Trends</h3>
+          <p>
+            Learn about the latest trends and technologies shaping the future of
+            web development.
+          </p>
+        </div>
+        <div class="webinar-item" onclick="showDetails(3)">
+          <img
+            src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2ViaW5hciUyMEFJJTIwYW5kJTIwRGF0YSUyMFNjaWVuY2V8ZW58MHx8MHx8fDA%3D"
+            alt="Webinar 3"
+          />
+          <h3>AI in Web Development</h3>
+          <p>
+            Discover how AI is transforming the landscape of web development in
+            this informative session.
+          </p>
+        </div>
+      </div>
+
+      <section id="webinar-details-1" class="webinar-details">
+        <img
+          src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHdlYmluYXIlMjBBSSUyMGFuZCUyMERhdGElMjBTY2llbmNlfGVufDB8fDB8fHww"
+          alt="AI and Data Science"
+        />
+        <h2>AI and Data Science</h2>
+        <p>
+          This webinar dives deep into the fundamentals of Artificial
+          Intelligence and Data Science. You'll learn about the latest tools and
+          techniques used in the industry, and how AI is being applied across
+          various fields. Whether you're a beginner or an experienced
+          professional, this webinar offers valuable insights into the future of
+          AI and Data Science.
+        </p>
+        <a href="#" class="btn">Register Now</a>
+      </section>
+
+      <section id="webinar-details-2" class="webinar-details">
+        <img
+          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2ViaW5hciUyMFdlYiUyMERldmVsb3BtZW50fGVufDB8fDB8fHww"
+          alt="Web Development Trends"
+        />
+        <h2>Web Development Trends</h2>
+        <p>
+          Stay ahead of the curve with our webinar on the latest trends in web
+          development. We will cover emerging technologies, best practices, and
+          the tools you need to succeed in the ever-evolving landscape of web
+          development. This webinar is perfect for developers looking to enhance
+          their skills and stay current with industry advancements.
+        </p>
+        <a href="#" class="btn">Register Now</a>
+      </section>
+
+      <section id="webinar-details-3" class="webinar-details">
+        <img
+          src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8d2ViaW5hciUyMEFJJTIwYW5kJTIwRGF0YSUyMFNjaWVuY2V8ZW58MHx8MHx8fDA%3D"
+          alt="AI in Web Development"
+        />
+        <h2>AI in Web Development</h2>
+        <p>
+          Explore how Artificial Intelligence is revolutionizing web
+          development. This webinar will cover AI-powered tools, frameworks, and
+          best practices for integrating AI into your web development workflow.
+          Learn how to leverage AI to create smarter, more responsive web
+          applications that meet the demands of modern users.
+        </p>
+        <a href="#" class="btn">Register Now</a>
+      </section>
+
+      <section id="webinar-details-4" class="webinar-details">
+        <center>
+            <p class="btns-1">Click and view</p>
+            <span>Click above any webinar to get details about that Webinar and Register Link</span>
+        </center>
+      </section>
+    </div>
+
+    <script>
+      function showDetails(webinarId) {
+        document
+          .querySelectorAll(".webinar-details")
+          .forEach(function (section) {
+            section.classList.remove("active");
+          });
+
+        document
+          .getElementById("webinar-details-" + webinarId)
+          .classList.add("active");
+
+        document
+          .getElementById("webinar-details-" + webinarId)
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
