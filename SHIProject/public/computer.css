@@ -4,6 +4,11 @@
     max-width: 1200px;
 }
 
+header .logo img {
+    height: 60px;
+    border-radius: 20%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;

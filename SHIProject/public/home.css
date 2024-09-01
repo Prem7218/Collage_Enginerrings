@@ -1,3 +1,70 @@
+.peer-discussion-section {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.container-forum {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-description {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#btns {
+    position: relative;
+    width: 250px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 150px;
+    position: relative;
+    top: 2vw;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
 
 * {
     margin: 0;
@@ -41,28 +108,34 @@ header {
     width: 50px;
 }
 
-nav {
+ nav {
     float: right;
     margin-right: 3%;
+    position: relative;
+    top: 15px;
+}
+
+header .logo img {
+    height: 60px;
+    border-radius: 20%;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    column-gap: 5vw;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    padding: 10px 20px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; 
 }
 
 nav ul li a:hover {
     color: #007BFF;
-}
+} 
 
 #img-top {
     background-image: url('http://www.aecwb.edu.in/assets/images/bg/1.jpg');

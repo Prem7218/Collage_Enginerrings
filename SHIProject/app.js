@@ -4,6 +4,11 @@ const path = require("path");
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "/views"))
 app.use(express.static('public'));
+// import listingschem from "./listeing";
+// import userSchema from "./data";
+const data1= require("./model/listeing");
+
+console.log("Listing: ", data1);
 // const mongoose = require('mongoose');
 // mongoose.connect('mongodb://localhost:27017/mydatabase');
 
@@ -13,6 +18,9 @@ app.get("/", (req,res)=>{
     console.log(data);
 });
 
+app.get("/mindmap", (req, res) => {
+    res.render("mindmap.ejs")
+})
 
 app.get("/sinup", (req,res)=>{
     res.render("singn.ejs");

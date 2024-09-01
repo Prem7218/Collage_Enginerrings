@@ -8,6 +8,11 @@ body {
     line-height: 1.6;
 }
 
+header .logo img {
+    height: 60px;
+    border-radius: 20%;
+}
+
 .container {
     width: 85%;
     margin: 0 auto;
