@@ -1,75 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Computer Engineering</title>
-    <link rel="stylesheet" href="computer.css">
-</head>
-<body>
+    <link rel="stylesheet" href="computer.css" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="https://i.postimg.cc/ryJpP5Rk/Logo-1.png"
-                    alt="Logo">
-            </div>
-            <nav>
-                <ul class="ul-list">
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/singn">Logout</a></li>
-                </ul>
-            </nav>
+      <div class="container">
+        <div class="logo">
+          <img src="https://i.postimg.cc/ryJpP5Rk/Logo-1.png" alt="Logo" />
         </div>
+        <nav>
+          <ul class="ul-list">
+            <li><a href="/home">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/singn">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="hero">
-        <h1>Computer Engineering</h1>
-        <h2>Innovating the Future of Technology</h2>
-        <a href="#learn-more" class="btn">Learn More</a>
+      <h1>Computer Engineering</h1>
+      <h2>Innovating the Future of Technology</h2>
+      <a href="#learn-more" class="btn">Learn More</a>
     </section>
 
     <section class="intro" id="learn-more">
-        <div class="container">
-            <h2>What is Computer Engineering?</h2>
-            <p>Computer Engineering is a field that integrates electrical engineering and computer science to develop computer hardware and software. Computer engineers are involved in many hardware and software aspects of computing, from the design of individual microprocessors, personal computers, and supercomputers, to circuit design.</p>
-        </div>
+      <div class="container">
+        <h2>What is Computer Engineering?</h2>
+        <p>
+          Computer Engineering is a field that integrates electrical engineering
+          and computer science to develop computer hardware and software.
+          Computer engineers are involved in many hardware and software aspects
+          of computing, from the design of individual microprocessors, personal
+          computers, and supercomputers, to circuit design.
+        </p>
+      </div>
     </section>
 
+    <div class="ai-map" id="aiMap">
+      <center>
+        <h2>Click Below to view AI Study</h2>
+        <button class="btn" onclick="showPopup()">AI MIND MAP's</button>
+      </center>
+    </div>
+
+    <div id="popupModal" class="popup-modal">
+      <div class="popup-content">
+        <span class="close-button" onclick="hidePopup()">&times;</span>
+        <iframe class="mindmap-frame" src="/mindmap"></iframe>
+      </div>
+    </div>
+
     <section class="applications">
-        <div class="container">
-            <h2>Applications of Computer Engineering</h2>
-            <div class="application-items">
-                <div class="application-item">
-                    <img src="https://media.istockphoto.com/id/1491192988/photo/working-towards-a-bright-future.jpg?s=612x612&w=0&k=20&c=8l6p4Br4Jg0HiPTGVsc1V4r6melejSNF2lh3vFhnwXs=" alt="Software Development">
-                    <h3>Software Development</h3>
-                    <p>Computer engineers are integral in developing software solutions that drive the technology of tomorrow, including operating systems, apps, and games.</p>
-                </div>
-                <div class="application-item">
-                    <img src="https://media.istockphoto.com/id/1341410028/photo/engineer-technician-electrician-inspect-system-with-laptop-computer-electric-installation.jpg?s=612x612&w=0&k=20&c=zvtMrBqVDtd4VH-S91Q8t8U8FW7SZMDeAvU_SIPMdw8=" alt="Hardware Engineering">
-                    <h3>Hardware Engineering</h3>
-                    <p>From designing processors to creating embedded systems, hardware engineering is at the core of computer engineering.</p>
-                </div>
-                <div class="application-item">
-                    <img src="https://media.istockphoto.com/id/1068618692/photo/business-network-concept.jpg?s=612x612&w=0&k=20&c=nhG46_71dEWiHbkbOh4R7u7WCQHUMQvj2KOHcDgVe44=" alt="Networking">
-                    <h3>Networking</h3>
-                    <p>Networking technology allows computers to communicate and share resources, a critical aspect of computer engineering.</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2>Applications of Computer Engineering</h2>
+        <div class="application-items">
+          <div class="application-item">
+            <img
+              src="https://media.istockphoto.com/id/1491192988/photo/working-towards-a-bright-future.jpg?s=612x612&w=0&k=20&c=8l6p4Br4Jg0HiPTGVsc1V4r6melejSNF2lh3vFhnwXs="
+              alt="Software Development"
+            />
+            <h3>Software Development</h3>
+            <p>
+              Computer engineers are integral in developing software solutions
+              that drive the technology of tomorrow, including operating
+              systems, apps, and games.
+            </p>
+          </div>
+          <div class="application-item">
+            <img
+              src="https://media.istockphoto.com/id/1341410028/photo/engineer-technician-electrician-inspect-system-with-laptop-computer-electric-installation.jpg?s=612x612&w=0&k=20&c=zvtMrBqVDtd4VH-S91Q8t8U8FW7SZMDeAvU_SIPMdw8="
+              alt="Hardware Engineering"
+            />
+            <h3>Hardware Engineering</h3>
+            <p>
+              From designing processors to creating embedded systems, hardware
+              engineering is at the core of computer engineering.
+            </p>
+          </div>
+          <div class="application-item">
+            <img
+              src="https://media.istockphoto.com/id/1068618692/photo/business-network-concept.jpg?s=612x612&w=0&k=20&c=nhG46_71dEWiHbkbOh4R7u7WCQHUMQvj2KOHcDgVe44="
+              alt="Networking"
+            />
+            <h3>Networking</h3>
+            <p>
+              Networking technology allows computers to communicate and share
+              resources, a critical aspect of computer engineering.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="future">
-        <div class="container">
-            <h2>The Future of Computer Engineering</h2>
-            <p>The future of computer engineering is bright, with innovations in AI, quantum computing, and blockchain technology leading the way. Computer engineers will play a crucial role in shaping the future of technology and solving the challenges of tomorrow.</p>
-        </div>
+      <div class="container">
+        <h2>The Future of Computer Engineering</h2>
+        <p>
+          The future of computer engineering is bright, with innovations in AI,
+          quantum computing, and blockchain technology leading the way. Computer
+          engineers will play a crucial role in shaping the future of technology
+          and solving the challenges of tomorrow.
+        </p>
+      </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Computer Engineering Website. All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>&copy; 2024 Computer Engineering Website. All rights reserved.</p>
+      </div>
     </footer>
-</body>
+
+    <script>
+      let body = document.querySelector("body");
+      let popModal = document.querySelector("#popupModal");
+
+      function showPopup() {
+        popModal.style.display = "flex";
+        document.body.classList.add("no-scroll");
+      }
+
+      function hidePopup() {
+        document.getElementById("popupModal").style.display = "none";
+        document.body.classList.remove("no-scroll");
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const aiMap = document.getElementById("aiMap");
+
+        function checkVisibility() {
+          const rect = aiMap.getBoundingClientRect();
+          const windowHeight =
+            window.innerHeight || document.documentElement.clientHeight;
+
+          if (rect.top <= windowHeight && rect.bottom >= 0) {
+            aiMap.classList.remove("visible");
+            void aiMap.offsetWidth; // Force reflow to reset animation
+
+            setTimeout(() => {
+              aiMap.classList.add("visible");
+            }, 0);
+          }
+        }
+
+        window.addEventListener("scroll", checkVisibility);
+        window.addEventListener("resize", checkVisibility);
+
+        checkVisibility();
+      });
+    </script>
+  </body>
 </html>
